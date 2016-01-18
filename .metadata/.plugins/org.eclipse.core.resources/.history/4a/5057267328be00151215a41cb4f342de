@@ -1,0 +1,41 @@
+package sentiment;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Config {
+	
+	// JDBC driver name and database URL
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost/sentiment";
+	// Database credentials
+	static final String USER = "root";
+	//static final String PASS = "ratnesh";
+	static final String PASS = "1234";
+	
+	//String path="C:/Users/ratnesh/Documents/GitHub/sentimentAnalysis/src/featureSetProductWise/input" 
+	private String path ="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/src/featureSetProductWise/";
+	
+	public Connection getConnection(){
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn;
+			try {
+				conn = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
+				return conn;
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+		
+	}
+	
+	
+}

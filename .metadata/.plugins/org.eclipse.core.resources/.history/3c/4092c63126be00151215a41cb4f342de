@@ -1,0 +1,7 @@
+package snippet;
+
+public class Snippet {
+	Properties    props = new Properties();
+	    props.load(new FileInputStream("Hello.properties"));
+}
+
