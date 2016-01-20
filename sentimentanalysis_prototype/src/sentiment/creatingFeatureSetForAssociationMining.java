@@ -32,39 +32,67 @@ public class creatingFeatureSetForAssociationMining {
 		  //rs = stmt.executeQuery(sql);
 		  String productId = "B0000510ZO";
 		 // while (rs.next()) {
-		   BufferedWriter writer = null;
+		   BufferedWriter writer,writer2 = null;
 		  // productId = rs.getString("prodId");
-		  String sql = "Select w.sentenceId,w.word from electronics_review e inner join (SELECT r.reviewId,t.sentenceId,t.word,t.id FROM tagwords t INNER JOIN reviewsentence r on t.sentenceId = r.id and (t.posTag='NN' OR t.posTag='NNS')) w on w.reviewId = e.id and e.prodId="
-		     + "'" + productId + "'";
+		  String sql = "Select w.sentenceId,w.word,w.id from electronics_review e "
+		  			+ "inner join (SELECT r.reviewId,t.sentenceId,t.word,t.id FROM tagwords t "
+		  			+ "INNER JOIN reviewsentence r on t.sentenceId = r.id and (t.posTag='NN' OR t.posTag='NNS')) w on w.reviewId = e.id and e.prodId="
+		  			+ "'" + productId + "'";
 		   rs2 = stmt2.executeQuery(sql);
-		   writer = new BufferedWriter(
-		     new FileWriter(config.getFilePath()+"input"
-		       + productId + ".txt"));
+		   writer = new BufferedWriter(new FileWriter(config.getFilePath()+"input"+ productId + ".txt"));
+		   writer2 = new BufferedWriter(new FileWriter(config.getFilePath()+"temp"+ productId + ".txt"));
 		   String word = "";
 		   Long prevsentenceId = -99l, sentenceId;
 		   StringBuilder buffer = new StringBuilder();
+		   String out ="";
+		   Long prevwordId = -99L,wordId;
 		   while (rs2.next()) {
 			    sentenceId = rs2.getLong("sentenceId");
 			    word = rs2.getString("word");
 			    word = word.toLowerCase();
+			    
+			    wordId = rs2.getLong("id");
+			    
 			    if (sentenceId > prevsentenceId) {
-			     if(prevsentenceId!=-99L)
-			      writer.write(buffer.toString());
-			     // writer.write(out);
-			     
+			     if(prevsentenceId!=-99L){
+			    	 writer.write(buffer.toString());
+				     out=out+"~"+prevsentenceId;
+				     System.out.println(out);
+				     writer2.write(out);
+				     
+			     }
+
 			    // System.out.println(sentenceId + " text :"+out + prevsentenceId);
-			     if(prevsentenceId!=-99l)
-			      writer.newLine();
-			     prevsentenceId = sentenceId;
+			     if(prevsentenceId!=-99l){
+			    	 writer.newLine(); 
+				     writer2.newLine();
+			     }
+			      
+			     
+			     out="";
 			    // out="";
 			     buffer = new StringBuilder();
 			    }
+			    
+			    if((wordId-prevwordId)<=3l && (sentenceId-prevsentenceId)<1l){
+			    	out = out + " "+word+","+wordId;
+			    	
+			    }
+			    else
+			    	out=out+"."+word+","+wordId;
+
 			    if (!buffer.toString().contains(word)) {
 			     buffer.append(word + " ");
 			    }
+			    prevwordId = wordId;
+			    prevsentenceId = sentenceId;
 			    
 		   }
 		   writer.write(buffer.toString());
+		   out=out+"~"+prevsentenceId;
+		     System.out.println(out);
+		     writer2.write(out);
+		     writer2.close();
 		   if (writer != null)
 		    writer.close();
 		//  }

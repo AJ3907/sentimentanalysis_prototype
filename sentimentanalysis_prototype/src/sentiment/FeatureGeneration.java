@@ -29,11 +29,12 @@ public class FeatureGeneration {
 		stmt = (Statement) conn.createStatement();
 
 		String sql = "SELECT distinct prodId FROM electronics_review";
-		rs = stmt.executeQuery(sql);
+		//rs = stmt.executeQuery(sql);
 
 		String productId = "";
-		while (rs.next()) {
-			productId = rs.getString("prodId");
+		//while (rs.next()) {
+//			productId = rs.getString("prodId");
+			productId = "B000233WJ6";
 			System.out.println("product id = " + productId);
 
 			String output = config.getFilePath()+"output"
@@ -49,7 +50,7 @@ public class FeatureGeneration {
 			algo.runAlgorithm(input, output, minsup);
 			algo.printStats();
 
-		}
+	//	}
 		stmt.close();
 		conn.close();
 	}

@@ -1,14 +1,90 @@
-wall:31
+things:9
+supplies:9
+supplies power:9
+need:9
+laptop:9
+fact:9
+device:9
+appliances:9
+store:10
+something:10
+prong:10
+plugs:10
+house:10
+ft:10
+box:10
+anyone:10
+way:11
+space:11
+size:11
+room:11
+one:11
+nothing:11
+adapters:11
+adapters power:9
+problems:12
+problem:12
+issues:12
+electricity:12
+purpose:13
+computer:13
+charger:13
+car:13
+devices:14
+anything:15
+jump:16
+use:17
+time:17
+gauge:17
+feet:17
+amps:17
+wire:18
+protector:18
+protector surge:18
+item:18
+duty:19
+duty cord:12
+strip:22
+strip power:20
+outlets:22
+outlets power:10
+battery:22
+tv:23
+tv power:10
+tv cord:11
+surge:23
+cables:23
+wall:29
+wall outlet:10
+wall cord:11
+wall power:13
+plug:30
 job:31
-plug:34
-foot:36
-price:40
-length:40
-quality:45
-outlet:50
-product:51
-cords:53
-cable:99
-power:128
-extension:151
-cord:237
+job cord:10
+job extension:11
+foot:32
+foot extension:14
+foot extension cord:12
+foot cord:22
+price:38
+length:39
+length cord:11
+outlet:43
+outlet cord:15
+quality:44
+quality cord:9
+cords:48
+cords cord:9
+cords power:14
+cords extension:20
+product:50
+cable:87
+cable power:11
+cable extension:15
+power:111
+power extension:23
+power extension cord:12
+power cord:39
+extension:146
+extension cord:97
+cord:214

@@ -1,13 +1,75 @@
-monitor:27
-projector:32
-tv:44
-product:45
-length:45
+wire:9
+store:9
+shipping:9
+people:9
+electricity:9
+nothing:10
+house:10
+device:10
+ceiling:10
+reviews:11
+printer:11
+pc:11
+home:11
+fire:11
+electronics:11
+devices:11
+amps:11
+monitors:12
+gauge:12
+fine:12
+item:14
+plug:15
+foot:15
+equipment:15
+something:16
+replacement:16
+issues:17
+use:18
+problems:18
+one:18
+work:19
+time:19
+feet:19
+feet power:9
+wall:20
+wall tv:9
+wall cord:10
+job:22
+outlet:25
+outlet power:11
+monitor:26
+monitor cord:9
+monitor power:10
+extension:26
+extension cord:14
+projector:30
+projector cord:9
+projector power:11
+tv:40
+tv power:10
+tv cord:20
+product:44
+length:44
+length cord:10
+length cable:10
 computer:45
-quality:50
+computer cable:10
+computer cord:15
+computer power:18
+quality:49
+quality price:9
+quality power:9
+quality cables:14
+quality cable:14
 price:51
-cords:57
-cables:97
-cable:169
-power:212
-cord:218
+cords:52
+cords power:30
+cables:89
+cables cable:9
+cables power:21
+cable:141
+cable power:31
+power:193
+power cord:90
+cord:195
