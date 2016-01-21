@@ -24,7 +24,7 @@ public class breakReviewIntoSentence {
 		
 		stmt = (Statement) conn.createStatement();
 
-		String sql = "SELECT id,reviewText from electronics_review";
+		String sql = "SELECT id,reviewText from electronics_review where prodId="+'"'+"B000123CG3"+'"';
 		rs = stmt.executeQuery(sql);
 
 		Long reviewId;

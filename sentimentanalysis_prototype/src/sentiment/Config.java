@@ -16,6 +16,8 @@ public class Config {
 	
 	//String path="C:/Users/ratnesh/Documents/GitHub/sentimentAnalysis/src/featureSetProductWise/input" 
 	private String filepath ="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/src/featureSetProductWise/";
+	private String testDatapath ="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/src/customerReviewData/";
+	
 	
 	public Connection getConnection(){
 		try {
@@ -39,6 +41,10 @@ public class Config {
 	
 	public String getFilePath(){
 		return filepath;
+	}
+	
+	public String getTestDataPath(){
+		return testDatapath;
 	}
 	
 	
