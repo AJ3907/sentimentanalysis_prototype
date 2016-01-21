@@ -30,7 +30,7 @@ public class creatingFeatureSetForAssociationMining {
 		  stmt2 = (Statement) conn.createStatement();
 		  // String sql = "SELECT distinct prodId FROM electronics_review";
 		  //rs = stmt.executeQuery(sql);
-		  String productId = "B0000510ZO";
+		  String productId = "B000123CG3";
 		 // while (rs.next()) {
 		   BufferedWriter writer,writer2 = null;
 		  // productId = rs.getString("prodId");

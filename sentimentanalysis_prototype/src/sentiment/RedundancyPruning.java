@@ -23,7 +23,7 @@ public class RedundancyPruning {
 		Config config = new Config();
 		FileInputStream fstream;
 		BufferedReader br;
-		String productId="B000233WJ6";
+		String productId="B000123CG3";
 		
 		ArrayList<String> featurelist = new ArrayList<String>();
 		HashMap<String, Integer> hm = new HashMap<>();

@@ -34,7 +34,7 @@ public class FeatureGeneration {
 		String productId = "";
 		//while (rs.next()) {
 //			productId = rs.getString("prodId");
-			productId = "B000233WJ6";
+			productId = "B000123CG3";
 			System.out.println("product id = " + productId);
 
 			String output = config.getFilePath()+"output"

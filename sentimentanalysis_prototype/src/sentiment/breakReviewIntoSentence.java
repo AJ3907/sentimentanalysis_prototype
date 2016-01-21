@@ -31,7 +31,8 @@ public class breakReviewIntoSentence {
 		String reviewText;
 		while (rs.next()) {
 			reviewId = rs.getLong("id");
-			reviewText = rs.getString("reviewText");
+			reviewText = rs.getString("reviewText").toUpperCase();
+			
 			BreakIterator iterator = BreakIterator.getSentenceInstance(Locale.US);
 			iterator.setText(reviewText);
 			int start = iterator.first();
@@ -42,7 +43,7 @@ public class breakReviewIntoSentence {
 				System.out.println("senetnce = " + reviewText.substring(start, end));
 
 				ps.setLong(1, reviewId);
-				ps.setString(2, reviewText.substring(start, end));
+				ps.setString(2, reviewText.substring(start, end).toLowerCase());
 				ps.executeUpdate();
 
 			}

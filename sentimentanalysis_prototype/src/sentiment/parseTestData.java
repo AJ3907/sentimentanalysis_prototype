@@ -9,6 +9,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 public class parseTestData {
 
@@ -38,6 +42,7 @@ public class parseTestData {
 	    String productId="B000123CG3";
 	    String sql = "INSERT INTO electronics_review VALUES(?,?,?,?,?,?,?,?,?,?,?)";
 	    ps = conn.prepareStatement(sql);
+	    HashMap<String, Integer> hm = new HashMap<>();
 	    while ((line = br.readLine()) != null) {
 	    	
 	    	
@@ -56,19 +61,42 @@ public class parseTestData {
 	    			ps.setInt(9, 0);
 	    			ps.setString(10, null);
 	    			ps.setInt(11, 5700+count-1);
-	    			ps.executeUpdate();
-	    			System.out.println(summary);
+	    			//ps.executeUpdate();
+	    			//System.out.println(summary);
 	    		}
 	    		//for the next review.
 	    		summary = line.replace("[t]", "");
 	    		text="";
 	    	}
 	    	else{
-	    		if(line.contains("##"))
+	    		if(line.contains("##")){
 	    			text+=line.split("##")[1];
+	    			String[] features=(line.split("##")[0]).split(",");
+	    			for(int i=0;i<features.length;i++){
+	    				if(!hm.containsKey(features[i].split("\\[")[0]))
+	    					hm.put(features[i].split("\\[")[0], 0);
+	    			}
+	    			
+	    		}
+	    			
 	    	}
 	   
 		}
+	    
+	    Set set = hm.entrySet();
+	      // Get an iterator
+	    Iterator i = set.iterator();
+	   // System.out.println(hm.size());
+	      // Display elements
+	    
+	    while(i.hasNext()) {
+	         Map.Entry<String,Integer> me = (Map.Entry)i.next();
+	         
+	         System.out.println(me.getKey());
+	         
+	        	
+	         //System.out.println(line+"::"+me.getKey());
+	     }
 	    
 	    fstream.close();
 		

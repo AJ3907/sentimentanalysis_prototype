@@ -1,0 +1,71 @@
+life battery:9
+hands:6
+controls:8
+\\software:16
+use:7
+\\focus:6
+resolution:8
+photos:19
+years:6
+research:7
+quality pictures:6
+\\canon:15
+mode:9
+powershot:6
+features:26
+problem:9
+reviews:8
+\\price:9
+\\options:8
+pics:6
+results:9
+screen lcd:7
+metz flash:6
+settings:10
+canon camera:15
+images:17
+time camera:11
+megapixel:7
+photoshop:6
+g2:12
+film:9
+viewfinder lcd:7
+g3:31
+something:7
+quality:23
+amazon:8
+exposure:6
+light:6
+anyone:6
+slr:9
+shots:10
+viewfinder lens:11
+g3 camera:15
+photography:8
+card:16
+flash:21
+color:6
+range:9
+manual:12
+lcd:6
+battery:11
+\\lens:16
+speed:6
+point:4
+pictures:31
+moment:6
+nikon:8
+lot:11
+cameras:33
+flaw:6
+ability:6
+everything:6
+camera:82
+shoot point:8
+shutter:17
+canon g3:15
+zoom:14
+way:7
+time:24
+\\auto mode:6
+film camera:8

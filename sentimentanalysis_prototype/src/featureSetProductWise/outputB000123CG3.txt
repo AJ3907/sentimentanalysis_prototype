@@ -1,0 +1,98 @@
+years:6
+speed:6
+powershot:6
+pics:6
+photoshop:6
+moment:6
+light:6
+hands:6
+focus:6
+flaw:6
+exposure:6
+everything:6
+color:6
+anyone:6
+ability:6
+way:7
+view:7
+use:7
+something:7
+review:7
+research:7
+metz:7
+metz flash:6
+megapixel:7
+control:7
+reviews:8
+resolution:8
+photography:8
+options:8
+nikon:8
+controls:8
+auto:8
+auto mode:6
+amazon:8
+slr:9
+shoot:9
+shoot point:8
+screen:9
+screen lcd:7
+results:9
+range:9
+problem:9
+price:9
+thing:10
+shots:10
+settings:10
+lot:11
+life:11
+life battery:9
+point:12
+manual:12
+image:12
+g2:12
+zoom:14
+viewfinder:14
+viewfinder lcd:7
+viewfinder lcd lens:6
+viewfinder lens:11
+mode:15
+software:16
+software camera:6
+card:16
+shutter:17
+images:17
+film:17
+film camera:8
+lcd:20
+lcd lens:6
+lcd camera:6
+battery:20
+picture:23
+picture camera:6
+picture quality:7
+photos:25
+features:26
+features camera:11
+lens:27
+lens camera:6
+flash:27
+flash g3:6
+flash quality:7
+cameras:33
+cameras g3:8
+time:35
+time camera:11
+quality:36
+quality pictures:6
+quality camera:8
+quality g3:10
+pictures:37
+pictures camera:6
+canon:45
+canon g3:15
+canon g3 camera:6
+canon camera:15
+g3:61
+g3 camera:15
+camera:164

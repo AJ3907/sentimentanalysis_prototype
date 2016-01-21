@@ -29,7 +29,7 @@ public class pruning {
 		Long sentenceId;
 		FileInputStream fstream;
 		BufferedReader br;
-		String productId="B000233WJ6";
+		String productId="B000123CG3";
 		HashMap<String,Integer> hm=new HashMap();
 		BufferedWriter writer=null;
 		writer = new BufferedWriter(new FileWriter(config.getFilePath()+"cp"+ productId + ".txt"));

@@ -50,7 +50,7 @@ public class TagText {
 		conn = config.getConnection();
 		stmt = (Statement) conn.createStatement();
 
-		String sql = "SELECT id,sentence from reviewsentence";
+		String sql = "SELECT id,sentence from reviewsentence where reviewId>5700";
 		rs = stmt.executeQuery(sql);
 
 		String reviewsentence;
