@@ -1,0 +1,72 @@
+feet:17
+amps:17
+protector surge:18
+use:7
+outlets:12
+laptop:9
+issues:12
+space:11
+foot cord:10
+power cord:13
+price:38
+things:9
+extension cord:53
+cable:38
+job cord:10
+jump:16
+gauge:17
+item:18
+cables:23
+quality cord:9
+cords power:14
+need:9
+devices:14
+surge:5
+outlet cord:15
+nothing:11
+cable power:11
+length cord:11
+something:10
+quality:35
+wire:18
+cords:14
+charger:13
+size:11
+anyone:10
+plug:20
+job:21
+problems:12
+fact:9
+purpose:13
+appliances:9
+tv power:10
+foot extension cord:12
+box:10
+duty cord:12
+battery:22
+house:10
+ft:10
+power extension:11
+anything:15
+computer:13
+car:13
+tv cord:11
+cords extension:20
+outlets power:10
+adapters power:9
+product:50
+supplies power:9
+length:28
+electricity:12
+store:10
+way:11
+room:11
+strip power:20
+power extension cord:12
+plugs:10
+prong:10
+duty:7
+wall outlet:10
+time:17
+wall:19
+cable extension:15

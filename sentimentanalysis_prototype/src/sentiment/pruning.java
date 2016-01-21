@@ -1,8 +1,10 @@
 package sentiment;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
@@ -21,19 +23,16 @@ public class pruning {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		Connection conn=null;
-		Statement stmt=null;
-		ResultSet rs = null;
 		Config config = new Config();
-		conn = config.getConnection();
 		
 		String sentence;
 		Long sentenceId;
 		FileInputStream fstream;
 		BufferedReader br;
-		String productId="B0000510ZO";
+		String productId="B000233WJ6";
 		HashMap<String,Integer> hm=new HashMap();
-		
+		BufferedWriter writer=null;
+		writer = new BufferedWriter(new FileWriter(config.getFilePath()+"cp"+ productId + ".txt"));
 		fstream = new FileInputStream(config.getFilePath()+"output"+productId+".txt");
 		
 		br = new BufferedReader(new InputStreamReader(fstream)); 
@@ -43,10 +42,14 @@ public class pruning {
 			   // process the line.
 				if(line.contains(" ")){
 					//means it has more than two words.
-					line = line.split(":")[0];
+					//line = line.split(":")[0];
 					hm.put(line, 0);
 					count++;
 					//System.out.println(line);
+				}
+				else{
+					writer.write(line);
+					writer.newLine();
 				}
 		}
 	    System.out.println(count);
@@ -69,6 +72,8 @@ public class pruning {
 		         if(processLine(hm, line, me.getKey())==3){
 		        	 System.out.println(me.getKey()+me.getValue());
 		        	 count++;
+		        	 writer.write(me.getKey());
+		        	 writer.newLine();
 		        	 i.remove();
 		         }
 		        	
@@ -79,7 +84,7 @@ public class pruning {
 				
 		}
 		
-	   
+	   writer.close();
 		System.out.println(count);
 		
 	}
@@ -88,14 +93,14 @@ public class pruning {
 		String pattern="";
 		
 		
-		int patternlength=phrase.length();
+		
 		//split phrase into words.
 		String temp[] = line.split("~");
 		
 		line = temp[0];
 		
 		Long sentenceId = Long.parseLong(temp[1]);
-		String words[]=phrase.split(" ");
+		String words[]=(phrase.split(":")[0]).split(" ");
 		String blocks[] = line.split("\\.");
 		
 		
