@@ -71,7 +71,11 @@ public class parseTestData {
 	    	else{
 	    		if(line.contains("##")){
 	    			text+=line.split("##")[1];
-	    			String[] features=(line.split("##")[0]).split(",");
+	    			String[] features;
+	    			if((line.split("##")[0]).contains(", "))
+	    				features=(line.split("##")[0]).split(", ");
+	    			else
+	    				features=(line.split("##")[0]).split(",");
 	    			for(int i=0;i<features.length;i++){
 	    				if(!hm.containsKey(features[i].split("\\[")[0]))
 	    					hm.put(features[i].split("\\[")[0], 0);
@@ -88,16 +92,18 @@ public class parseTestData {
 	    Iterator i = set.iterator();
 	   // System.out.println(hm.size());
 	      // Display elements
-	    
+	    count=0;
 	    while(i.hasNext()) {
 	         Map.Entry<String,Integer> me = (Map.Entry)i.next();
-	         
-	         System.out.println(me.getKey());
-	         
+	         if(!me.getKey().equals("")){
+	        	 System.out.println(me.getKey());
+		         count++;
+	         }
+	        	
 	        	
 	         //System.out.println(line+"::"+me.getKey());
 	     }
-	    
+	    System.out.println(count);
 	    fstream.close();
 		
 		

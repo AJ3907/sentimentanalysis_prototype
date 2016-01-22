@@ -47,7 +47,7 @@ public class RedundancyPruning {
 	    	int l = s.length;
 	    	String regex="";
 	    	for(int k=0;k<l;k++){
-	    		regex+="(?=.*("+s[k]+"( |)))";
+	    		regex+="(?=.*("+s[k]+"( |$)))";
 	    	}
 	    	regex+="[^\\n]+";
 	    	Pattern r = Pattern.compile(regex);
@@ -57,7 +57,7 @@ public class RedundancyPruning {
 	    		//	
 	    			Matcher m = r.matcher(featurelist.get(j));
 	    			
-	    			if(m.find()){
+	    			if(m.find()){	
 	    				int p = hm.get(featurelist.get(i));
 	    				int q = hm.get(featurelist.get(j));
 	    				

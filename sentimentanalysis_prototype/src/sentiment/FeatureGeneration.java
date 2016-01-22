@@ -43,7 +43,7 @@ public class FeatureGeneration {
 			String input = config.getFilePath()+"input"
 					+ productId + ".txt";
 
-			double minsup = 0.01; // MINIMUM SUPPORT which the paper has used
+			double minsup = 0.008; // MINIMUM SUPPORT which the paper has used
 									// i.e. 1%
 			// Applying the FPGROWTH algorithmMainTestFPGrowth.java
 			AlgoFPGrowth_Strings algo = new AlgoFPGrowth_Strings();

@@ -1,3 +1,20 @@
+work:5
+unit:5
+things:5
+technology:5
+shot:5
+setting:5
+photo:5
+people:5
+lag:5
+flashes:5
+fact:5
+difference:5
+choice:5
+button:5
+box:5
+bit:5
+anything:5
 years:6
 speed:6
 powershot:6
@@ -76,9 +93,13 @@ life battery:9
 auto mode:6
 shoot point:8
 metz flash:6
+review camera:5
 time camera:11
 canon g3:15
 film camera:8
 quality pictures:6
+image quality:5
 g3 camera:15
 viewfinder lcd:7
+battery g3:5
+life camera:5

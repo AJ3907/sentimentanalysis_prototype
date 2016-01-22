@@ -1,0 +1,84 @@
+night mode # 1
+raw image #1,image and images
+lense #2
+remote #5
+battery charging system #1
+white offset #1
+shape #1
+made #1(error maybe as made is not noun)
+light auto correction #1
+quality
+digital camera (postagger has marked digital as JJ and not NN)
+delay #4
+size #2
+four megapixel #1
+zooming lever #1
+4mp resolution #2
+metering option #1
+noise #5
+lens cap #4
+4mp camera (postagger: 4mp is JJ mostly)
+optic #1
+dial #3
+tiff format #1
+product #4
+exposure control #1
+display(postagger added as JJ)
+menu #3
+lag time #3
+depth #3
+canon powershot g3 #1
+lens cover #1
+photo quality #4
+manual function #1
+compactflash #5
+hot shoe flash #1
+digital zoom #2
+feel #5
+no-off button #1
+body #3
+casing #3
+auto setting #2
+download #4
+lag #5
+function #2
+external flash hot shoe #1
+raw format #2
+shoot (sometimes noun sometimes verb, removed in redundant pruning)
+finish #2
+grain #2
+weight #3
+lever #3
+strap #2
+darn diopter adjustment dial #1
+flash photo #1
+look #4
+image quality #4
+low light focus #1
+manual mode #2
+distortion #3
+import #1
+learning #2
+shot #3
+button #4
+highlight #1
+unresponsiveness #1
+4mp (postagger: marked as adjective)
+design #5
+viewfinder(subset available, redundant pruned)
+memory card #1
+learning curve #1
+macro #1
+stitch picture #1
+spot metering #1
+white balance #1
+print #3
+performance #2
+service #1
+optical zoom(postagger: optical is JJ)
+canera(camera maybe)
+
+
+35 are #1 frequency
+6 was our cap, most of them are below 4
+Display is marked as JJ and optical also as JJ
