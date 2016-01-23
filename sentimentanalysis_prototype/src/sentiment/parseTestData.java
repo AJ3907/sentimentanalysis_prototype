@@ -20,11 +20,11 @@ public class parseTestData {
 		// TODO Auto-generated method stub
 		
 		Connection conn=null;
-		Statement stmt=null;
-		PreparedStatement ps = null;
-		
 		Config config = new Config();
 		conn=config.getConnection();
+		
+		Statement stmt=null;
+		PreparedStatement ps = null;
 		
 		FileInputStream fstream;
 		BufferedReader br;

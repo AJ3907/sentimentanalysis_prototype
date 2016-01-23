@@ -2,11 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/jaws-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/json-20150729.jar"/>
-	<classpathentry kind="lib" path="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/mysql-connector-java-5.1.36-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/rita.jar"/>
-	<classpathentry kind="lib" path="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/stanford-postagger.jar"/>
-	<classpathentry kind="lib" path="C:/Users/goldy_torres/Desktop/sem8/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/stanford-postagger-2011-04-20.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ratnesh/Documents/GitHub/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/jaws-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ratnesh/Documents/GitHub/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/json-20150729.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ratnesh/Documents/GitHub/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/mysql-connector-java-5.1.36-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ratnesh/Documents/GitHub/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/rita.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ratnesh/Documents/GitHub/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/stanford-postagger.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ratnesh/Documents/GitHub/sentimentanalysis_prototype/sentimentanalysis_prototype/jar-files/stanford-postagger-2011-04-20.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
